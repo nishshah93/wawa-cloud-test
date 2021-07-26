@@ -8,8 +8,10 @@ I have followed the follwing design for simplification. Since the webpage needed
 
 
 What Can be improved? 
-- in current solution we can add ACM cert and do https. Interally from ALB to instance it can be http. We can also put WAF rules infront of ELB.
+- in current solution we can add ACM cert and do port 443. if we need more of routing then better to use ALB 
 - Since this was just written to test, we can have a better solution where s3 is the origin and has all the files and served using cloudfront. We can use WAF in front of cloud front.
+  ![s3_website](https://user-images.githubusercontent.com/87870511/126925011-99e2fdd6-e89c-4b0e-94df-dade268c2d27.png)
+
 
 - If this was an MVC app, we can host this in ECS fargate with proper CI-CD pipelines in place. lets say we have a dev
   ![nish-test-dev](https://user-images.githubusercontent.com/87870511/126828709-9ad85175-ae9c-49a6-981b-effb79d38035.png)
