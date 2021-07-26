@@ -6,7 +6,7 @@ I have followed the follwing design for simplification. Since the webpage needed
 ![staticwebsite](https://user-images.githubusercontent.com/87870511/126929957-e39051a6-fcea-4629-a329-d31ad1ef48ed.png)
 
 
-**How to run it**
+**How to run it?**
 - You need to setup your default aws profile that has access to all aws resources before you can run the start.sh
 - You can run start.sh to setup, plan and run this terraform code.
 - In the start.sh script it creates a s3 bucket where you can store your terraform state files. It also creates a dynamo table so that only one person can execute the terrafrom code, while its running it creates a lock and until the lock is released other person can apply his/her changes.
