@@ -14,7 +14,6 @@ resource "aws_lb" "load_balancer" {
   name               = "${local.name}-nlb"
   internal           = false
   load_balancer_type = "network"
-  subnets            =  [aws_subnet.public_1.id, aws_subnet.public_2.id]
 
   subnet_mapping {
     subnet_id     = aws_subnet.public_1.id

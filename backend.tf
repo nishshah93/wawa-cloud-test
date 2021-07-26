@@ -4,7 +4,7 @@ terraform{
     backend "s3" {
         region = "us-east-1"
         // Ideally you wanna use a role(role_arn) that is specifically designed for terraform 
-        profile = "nish-test"
+        profile = "default"
         bucket = "nish-cloud-testing"
         key = "wawa_cloud"
         dynamodb_table = "nish-cloud-testing-terraform-state"
@@ -14,7 +14,7 @@ terraform{
 provider "aws" {
     region = "us-east-1"
     version = "~> 3.0"
-    profile = "nish-test"
+    profile = "default"
 }
     // you can lock down and allow only certain workspaces 
     // locals {
