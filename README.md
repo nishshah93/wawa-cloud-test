@@ -21,5 +21,5 @@ I have followed the follwing design for simplification. Since the webpage needed
   ![s3_website](https://user-images.githubusercontent.com/87870511/126925011-99e2fdd6-e89c-4b0e-94df-dade268c2d27.png)
 
 
-- If this was an MVC app, we can host this in ECS fargate with proper CI-CD pipelines in place. lets say we have a dev
+- If this was an MVC app, we can host this in ECS fargate with proper CI-CD pipelines in place. lets say we have a dev branch where all devs commit their changes then we can do something like below to get it all deployed.
   ![nish-test-dev](https://user-images.githubusercontent.com/87870511/126828709-9ad85175-ae9c-49a6-981b-effb79d38035.png)
