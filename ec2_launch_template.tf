@@ -72,8 +72,3 @@ resource "aws_autoscaling_group" "test" {
   }
   vpc_zone_identifier = [aws_subnet.private_1.id, aws_subnet.private_2.id]
 }
-
-// resource "aws_autoscaling_attachment" "asg_attachment_elb" {
-//   autoscaling_group_name = aws_autoscaling_group.test.id
-//   alb_target_group_arn = aws_lb_target_group.test.arn
-// }
