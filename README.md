@@ -14,8 +14,7 @@ I have followed the follwing design for simplification. Since the webpage needed
 - Once everything is created you can just use NLBs static ip to get to the webpage(hosted through apache on linux)
 - and finally to destroy it all, just run "terraform destroy" command 
 
-
-**What Can be improved? **
+**What can be improved?**
 - in current solution we can add ACM cert and do port 443. if we need more of routing then its better to use ALB. We can still use NLB in front of it to get the static IP
 - Since this was just written to test, we can have a better solution where s3 is the origin and has all the files and served using cloudfront. We can use WAF in front of cloud front.
   ![s3_website](https://user-images.githubusercontent.com/87870511/126925011-99e2fdd6-e89c-4b0e-94df-dade268c2d27.png)
